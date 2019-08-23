@@ -134,3 +134,74 @@ html,
 body {
   height: 100%;
 }
+
+/*
+#5680E9
+#84CEEB
+#5AB9EA
+#C1C8E4
+#8860D0
+*/
+body {
+  display: flex;
+}
+
+.nav-bar {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  background-color: #8860d0;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  height: 60%;
+  width: 95%;
+}
+
+.nav ul {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav li {
+  border-bottom: solid 2px #5680e9;
+  text-align: right;
+  padding: 20px 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+article {
+  background-color: #c1c8e4;
+  width: 100%;
+}
+
+.Welcome {
+  height: 400px;
+  width: 100%;
+  background-color: green;
+}
+
+.mission {
+  height: 400px;
+  width: 100%;
+  background-color: yellow;
+}
+
+.About {
+  height: 400px;
+  width: 100%;
+  background-color: red;
+}
