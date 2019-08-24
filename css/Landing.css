@@ -145,6 +145,7 @@ body {
 
 body {
   display: flex;
+  flex-direction: column;
 }
 
 article {
@@ -254,6 +255,7 @@ article {
 
 /* Footer Section  */
 footer {
+  margin-left: 300px;
 }
 
 #Contact {
