@@ -259,6 +259,13 @@ footer {
 }
 
 #Contact {
+  height: 200px;
+  width: 100%;
+  background-color: pink;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 article h2 {
