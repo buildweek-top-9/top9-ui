@@ -134,6 +134,148 @@ html,
 body {
   height: 100%;
 }
+/*
+#5680E9
+#84CEEB
+#5AB9EA
+#C1C8E4
+#8860D0
+*/
+body {
+  display: flex;
+}
+article {
+  background-color: #c1c8e4;
+  width: 100%;
+  margin-left: 300px;
+}
+.nav-bar {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  background-color: #8860d0;
+  display: flex;
+  align-items: center;
+  /* opacity: 0.3; */
+}
+.nav {
+  /* height: 60%; */
+  width: 95%;
+  height: 350px;
+}
+.nav ul {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav li {
+  border-bottom: solid 4px #5680e9;
+  text-align: right;
+  padding: 20px 0;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#Welcome {
+  height: 400px;
+  width: 100%;
+  background-color: green;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* change later */
+}
+/* Welcome Section */
+#Welcome h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: 10;
+  /* background-image: url("https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; */
+}
+/* Mission Section  */
+#mission {
+  width: 100%;
+  background-color: yellow;
+  /* change later */
+}
+.mission-section {
+  display: flex;
+  height: 300px;
+}
+.mission-div {
+  display: flex;
+  align-items: center;
+}
+.mission-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.mission-img {
+  width: 500px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* About Section  */
+#About {
+  height: 400px;
+  width: 100%;
+  background-color: red;
+  /* change later */
+}
+/* Footer Section  */
+
+#Contact {
+  height: 200px;
+  width: 100%;
+  background-color: pink;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+
+
+article h2 {
+  font-size: 50px;
+}
+article p {
+  font-size: 20px;
+}
+/*Michael Agard's footer CSS goes here*/
+@media (max-width: 500px) {
+  .nav-bar {
+    width: 100%;
+    height: 300px;
+    padding-top: 0;
+  }
+  .nav {
+    height: 100%;
+  }
+  .nav li {
+    text-align: center;
+  }
+  article {
+    margin-top: 300px;
+    margin-left: 0;
+  }
+}
+
+
+
+
 
 
 
