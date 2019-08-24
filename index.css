@@ -143,6 +143,7 @@ body {
 */
 body {
   display: flex;
+  flex-direction: column;
 }
 article {
   background-color: #c1c8e4;
@@ -242,11 +243,7 @@ article {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
-
-
-
 
 article h2 {
   font-size: 50px;
