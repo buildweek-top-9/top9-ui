@@ -160,11 +160,13 @@ article {
   background-color: #8860d0;
   display: flex;
   align-items: center;
+  /* opacity: 0.3; */
 }
 
 .nav {
-  height: 60%;
+  /* height: 60%; */
   width: 95%;
+  height: 350px;
 }
 
 .nav ul {
@@ -178,7 +180,7 @@ article {
 }
 
 .nav li {
-  border-bottom: solid 2px #5680e9;
+  border-bottom: solid 4px #5680e9;
   text-align: right;
   padding: 20px 0;
 }
@@ -190,31 +192,71 @@ article {
   text-transform: uppercase;
 }
 
-.Welcome {
+#Welcome {
   height: 400px;
   width: 100%;
   background-color: green;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* change later */
 }
 
-.Welcome h1 {
+/* Welcome Section */
+#Welcome h1 {
   font-size: 60px;
   color: white;
   font-weight: 10;
+
+  /* background-image: url("https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; */
 }
 
-.mission {
-  height: 400px;
+/* Mission Section  */
+#mission {
   width: 100%;
   background-color: yellow;
   /* change later */
 }
 
-.About {
+.mission-section {
+  display: flex;
+  height: 300px;
+}
+.mission-div {
+  display: flex;
+  align-items: center;
+}
+
+.mission-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.mission-img {
+  width: 500px;
+  height: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* About Section  */
+#About {
   height: 400px;
   width: 100%;
   background-color: red;
   /* change later */
+}
+
+/* Footer Section  */
+footer {
+}
+
+#Contact {
 }
 
 article h2 {
@@ -224,6 +266,8 @@ article p {
   font-size: 20px;
 }
 
+/*Michael Agard's footer CSS goes here*/
+
 @media (max-width: 500px) {
   .nav-bar {
     width: 100%;
@@ -232,6 +276,9 @@ article p {
   }
   .nav {
     height: 100%;
+  }
+  .nav li {
+    text-align: center;
   }
 
   article {
