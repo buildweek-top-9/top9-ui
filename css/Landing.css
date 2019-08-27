@@ -258,13 +258,13 @@ footer {
   margin-left: 300px;
 }
 
-
-.container-contact {
+.container {
+  background-color:#5e42a6;
   height: 400px;
   width: 100%;
-  background-color: pink;
   flex-direction: column;
 }
+
 .touch {
   font-size: 40px;
   display: flex;
@@ -280,19 +280,14 @@ footer {
   justify-content: center;
 }
 
-.container-address {
-  height: 400px;
-  width: 100%;
-  background-color: pink;
-  flex-direction: column;
-}
-
 .Address {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  float: right;
 }
+
 
 label {
   color: #ffffff;
@@ -336,7 +331,7 @@ textarea {
   display: block;
   outline: 0;
   text-decoration: none;
-  width: 100%;
+  width: 500px;
 }
 
 article h2 {
