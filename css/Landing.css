@@ -258,15 +258,81 @@ footer {
   margin-left: 300px;
 }
 
-#Contact {
-  height: 200px;
+.container {
+  background-color:#5e42a6;
+  height: 400px;
   width: 100%;
-  background-color: pink;
-  min-height: 100vh;
+  flex-direction: column;
+}
+
+.touch {
+  font-size: 40px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
+.Address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+
+label {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0 0 0.7em 0;
+  display: block;
+  font-size: 1.1em;
+}
+
+.button {
+  -webkit-appearance: none;
+  transition: border-color 0.2s ease;
+  background-color: transparent;
+  border: solid 1px !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 3em;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: bold;
+  height: calc(4.75em + 2px);
+  letter-spacing: 0.25em;
+  line-height: 4.75em;
+  outline: 0;
+  padding: 0 3.75em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+textarea {
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25em;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  color: inherit;
+  display: block;
+  outline: 0;
+  text-decoration: none;
+  width: 500px;
+}
 
 article h2 {
   font-size: 50px;
