@@ -131,27 +131,30 @@ table {
   box-sizing: border-box;
 }
 html,
-body {
-  height: 100%;
-}
 
 /*
-#5680E9
-#84CEEB
-#5AB9EA
-#C1C8E4
-#8860D0
+Dark Blue:   #5680E9
+Light Blue:  #84CEEB
+Medium Blue: #5AB9EA
+Gray:        #C1C8E4
+Purple:      #8860D0
 */
 
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 article {
   background-color: #c1c8e4;
   width: 100%;
-  margin-left: 300px;
+  padding-left: 300px;
+}
+
+p {
+  padding: 30px 0;
 }
 
 .nav-bar {
@@ -165,7 +168,6 @@ article {
 }
 
 .nav {
-  /* height: 60%; */
   width: 95%;
   height: 350px;
 }
@@ -196,13 +198,26 @@ article {
 #Welcome {
   height: 400px;
   width: 100%;
-  background-color: green;
+  /* background-color: green; */
+  background-image: radial-gradient(circle, #84ceeb, #c1c8e4, #5680e9);
   min-height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   /* change later */
+}
+#Welcome div {
+  width: 85%;
+  /* background-image: linear-gradient(180deg, #5ab9ea, #8860d0); */
+}
+
+h1,
+h2,
+h3,
+button {
+  font-weight: bold;
 }
 
 /* Welcome Section */
@@ -224,32 +239,40 @@ article {
   /* change later */
 }
 
-.mission-section {
+.subsection {
   display: flex;
-  height: 300px;
+  height: 400px;
+  background-image: linear-gradient(180deg, #5ab9ea, #8860d0);
+  align-items: center;
 }
 .mission-div {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  width: 550px;
+  padding: 3em 2em;
 }
 
-.mission-section:nth-child(even) {
+/* .subsection:nth-child(even) {
   flex-direction: row-reverse;
-}
-.mission-img {
-  width: 500px;
+} */
+.subsection-img {
+  width: 300px;
   height: 100%;
 
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center top;
+}
+.mission div p {
+  font-size: 12px;
 }
 
 /* About Section  */
 #About {
   height: 400px;
   width: 100%;
-  background-color: red;
+  background-color: #5ab9ea;
   /* change later */
 }
 
@@ -259,7 +282,7 @@ footer {
 }
 
 .container {
-  background-color:#5e42a6;
+  background-color: #5e42a6;
   height: 400px;
   width: 100%;
   display: flex;
@@ -287,7 +310,6 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 
 label {
   color: #ffffff;
@@ -335,7 +357,7 @@ textarea {
 }
 
 article h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 article p {
   font-size: 20px;
@@ -343,21 +365,77 @@ article p {
 
 /*Michael Agard's footer CSS goes here*/
 
-@media (max-width: 500px) {
-  .nav-bar {
-    width: 100%;
-    height: 300px;
-    padding-top: 0;
-  }
-  .nav {
-    height: 100%;
-  }
+/* Mobile Design */
+@media (max-width: 550px) {
   .nav li {
     text-align: center;
   }
+}
+
+/* Smaller than desktop Designs */
+@media (max-width: 1000px) {
+  #Welcome div {
+    width: 85%;
+  }
+  .nav-bar {
+    width: 100%;
+    height: 50px;
+    padding-top: 0;
+    justify-content: center;
+  }
+  .nav {
+    height: 100%;
+    width: 500px;
+  }
+  .nav li {
+    border-bottom: none;
+    padding: 0;
+  }
+  .nav ul {
+    flex-direction: row;
+  }
+  .nav a {
+    font-size: 1rem;
+  }
 
   article {
-    margin-top: 300px;
-    margin-left: 0;
+    padding-top: 50px;
+    padding-left: 0;
   }
+
+  .subsection {
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+  }
+  /* .subsection:nth-child(even) {
+    flex-direction: column;
+  } */
+  .mission-div {
+    width: 90%;
+  }
+  .subsection-img {
+    width: 100%;
+    height: 100%;
+    /* height: auto; */
+  }
+}
+
+/* Button Tag (from Brett) */
+button {
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #c1c8e4;
+  transition-duration: 1s;
+  font-size: 15px;
+  border: 1px solid #c1c8e4;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: purple;
+  opacity: 0.5;
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
