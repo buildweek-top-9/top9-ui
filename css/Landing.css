@@ -193,6 +193,7 @@ p {
   text-decoration: none;
   font-size: 20px;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 #Welcome {
@@ -273,7 +274,6 @@ button {
   height: 400px;
   width: 100%;
   background-color: #5ab9ea;
-  /* change later */
 }
 
 /* Footer Section  */
