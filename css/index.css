@@ -389,6 +389,15 @@ article p {
   .nav li {
     text-align: center;
   }
+  #team .subsection {
+    height: 40vw;
+  }
+  #team button {
+    transform: scale(0.8);
+  }
+  #team .subsection-img {
+    width: 30vw;
+  }
 }
 
 /* Smaller than desktop Designs */
@@ -475,6 +484,9 @@ article p {
     display: flex;
     flex-direction: row;
   }
+  #team .subsection {
+    flex-direction: row;
+  }
 }
 
 button {
@@ -528,6 +540,10 @@ button:hover {
 
 .name-button {
   min-width: 125px;
+}
+
+#team .links {
+  align-items: center;
 }
 /* .about-imgs {
   display: flex;
