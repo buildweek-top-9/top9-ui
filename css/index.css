@@ -132,7 +132,7 @@ table {
 }
 html,
 
-/*
+/* Color Themes for this project:
 Dark Blue:   #5680E9
 Light Blue:  #84CEEB
 Medium Blue: #5AB9EA
@@ -140,23 +140,57 @@ Gray:        #C1C8E4
 Purple:      #8860D0
 */
 
+
+/* -----GLOBAL CODE----- */
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
 article {
   background-color: #c1c8e4;
   width: 100%;
   padding-left: 300px;
 }
-
 p {
   padding: 30px 0;
 }
 
+h1,
+h2,
+h3,
+button {
+  font-weight: bold;
+}
+article h2 {
+  font-size: 40px;
+}
+article p {
+  font-size: 20px;
+}
+
+button {
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #6e92de;
+  color: #c1c8e4;
+  transition-duration: 1s;
+  font-size: 15px;
+  border: 1px solid #c1c8e4;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 black;
+  box-shadow: 5px 10px 15px 0 black;
+}
+button:hover {
+  background-color: purple;
+  opacity: 0.5;
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* --End Global Code */
+
+/* -----NAVBAR CODE----- */
 .nav-bar {
   width: 300px;
   height: 100%;
@@ -167,12 +201,10 @@ p {
   z-index: 2;
   /* opacity: 0.3; */
 }
-
 .nav {
   width: 95%;
   height: 350px;
 }
-
 .nav ul {
   height: 100%;
   width: 100%;
@@ -182,13 +214,11 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .nav li {
   border-bottom: solid 4px #5680e9;
   text-align: right;
   padding: 20px 0;
 }
-
 .nav a {
   color: white;
   text-decoration: none;
@@ -197,7 +227,9 @@ p {
   letter-spacing: 3px;
   text-shadow: 2px 1px black;
 }
+/* --End NavBar Code-- */
 
+/* -----WELCOME SECTION------ */
 #Welcome {
   height: 400px;
   width: 100%;
@@ -210,31 +242,26 @@ p {
   flex-direction: column;
 }
 #Welcome div {
+  max-width: 850px;
   width: 85%;
 }
-
-h1,
-h2,
-h3,
-button {
-  font-weight: bold;
-}
-
-/* Welcome Section */
 #Welcome h1 {
   font-size: 60px;
   color: white;
-  font-weight: 10;
 }
+/* --End Welcome Code-- */
 
-/* Mission Section  */
+/* --------Mission Section-------  */
 #mission {
   width: 100%;
 }
+<<<<<<< HEAD
 .movies {
   height: 400px;
   width: 612px;
 }
+=======
+>>>>>>> master
 .subsection {
   display: flex;
   height: 400px;
@@ -246,13 +273,19 @@ button {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 550px;
+  width: 660px;
   padding: 3em 2em;
 }
-
 .subsection-img {
+<<<<<<< HEAD
   height: 400px;
   width: 500px;
+=======
+  width: 300px;
+  height: 100%;
+  border-bottom-left-radius: 15%;
+  border-top-right-radius: 10%;
+>>>>>>> master
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -262,19 +295,22 @@ button {
 .mission div p {
   font-size: 12px;
 }
+/* --End Mission Code-- */
 
-/* About Section  */
+/* ------About Section------  */
 #About {
   height: 400px;
   width: 100%;
-  padding: 20px 30px;
   background-image: linear-gradient(180deg, #5ab9ea, #8860d0);
 }
-
-/* Footer Section  */
-footer {
-  margin-left: 300px;
+.About-div {
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+/* Contact Us Section  */
 
 .container {
   background-color: #5e42a6;
@@ -283,36 +319,24 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 20px 0 20px 300px;
 }
-
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+}
 .touch {
   font-size: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-
 .contact-sentence {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-.Contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 100px;
-}
-
-.Address {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 100px;
-  padding-top: 50px;
-}
-
 label {
   color: #ffffff;
   font-weight: bold;
@@ -320,11 +344,9 @@ label {
   display: block;
   font-size: 1.1em;
 }
-
 input {
   width: 250px;
 }
-
 textarea {
   -webkit-appearance: none;
   background: rgba(255, 255, 255, 0.05);
@@ -337,12 +359,17 @@ textarea {
   margin-bottom: 5px;
   width: 500px;
 }
-
+.Address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  padding-top: 50px;
+}
 .icons {
   display: flex;
   flex-direction: row;
 }
-
 .fa {
   padding: 10px 0;
   font-size: 50px;
@@ -350,54 +377,110 @@ textarea {
   text-align: center;
   text-decoration: none;
 }
-
 .fa-facebook {
   background: #3b5998;
   color: white;
 }
-
 .fa-twitter {
   background: #55acee;
   color: white;
 }
-
 .fa-linkedin {
   background: #0073b1;
   color: white;
 }
-
 .fa-instagram {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnovhPijs-zn9oKrktkOl1HAIbs7XZe6BA8K3LQYYkpBQwV6li");
   color: white;
 }
-
 .fa-reddit {
   background: white;
   color: #ff4500;
 }
-
 .fa-github {
   background: white;
   color: black;
 }
+/* --End Contact Us Code-- */
 
-article h2 {
-  font-size: 40px;
-}
-article p {
-  font-size: 20px;
-}
-
-/* Mobile Design */
+/* -----Mobile Design------- */
 @media (max-width: 550px) {
   .nav li {
     text-align: center;
   }
-}
 
-/* Smaller than desktop Designs */
+  #team .subsection {
+    height: 40vw;
+  }
+  #team button {
+    transform: scale(0.8);
+  }
+  #team .subsection-img {
+    width: 30vw;
+  }
+  textarea {
+    width: 250px;
+  }
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+  #wrapper form {
+    align-items: center;
+  }
+} /*--End Mobile Design Section--*/
+
+/* -----About-Us-Page Section----- */
+.teams {
+  width: 100%;
+  line-height: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.team-member {
+  position: relative;
+  display: inline-block;
+}
+.team-member:hover .links {
+  display: flex;
+}
+.name-button {
+  min-width: 125px;
+  padding: 5px 10px;
+  border-radius: 10%;
+  transition-duration: 1s;
+  box-shadow: 5px 5px 10px 0 black;
+}
+.name-button:hover {
+  transform: none;
+  /* background-color: purple */
+}
+.links {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 5px;
+  z-index: 1;
+}
+.links a {
+  padding: 8px 0;
+}
+/* --End About-Us Page Section-- */
+
+/* -------Between Mobile and Desktop Screen Widths------ */
 @media (max-width: 1000px) {
-  #Welcome div {
+  #Welcome div,
+  .mission-div,
+  .About-div {
     width: 85%;
   }
   .nav-bar {
@@ -433,21 +516,32 @@ article p {
     height: 600px;
     width: 100%;
   }
-
-  .mission-div {
-    width: 90%;
-  }
   .subsection-img {
     width: 100%;
     height: 100%;
   }
   .container {
+    padding: 20px 0;
     height: 100%;
-    width: 100%;
+    /* flex-direction: column; */
+  }
+  #wrapper form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
   }
+
+  #About {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+  .About-div {
+    align-items: center;
+  }
+
   textarea {
     -webkit-appearance: none;
     background: rgba(255, 255, 255, 0.05);
@@ -460,80 +554,26 @@ article p {
     margin-bottom: 5px;
     width: 100%;
   }
-  .Contact {
+  /* .Contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-left: 0;
-  }
+  } */
   .Address {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0 0 50px 0;
   }
 
-  #team .subsection .about-imgs {
-    display: flex;
+  #team .subsection-img {
+    width: 30vw;
+  }
+  #team .subsection {
     flex-direction: row;
+    height: 32vw;
   }
-}
-
-button {
-  padding: 15px 20px;
-  border-radius: 20px;
-  background-color: transparent;
-  color: #c1c8e4;
-  transition-duration: 1s;
-  font-size: 15px;
-  border: 1px solid #c1c8e4;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 0 black;
-  box-shadow: 5px 10px 15px 0 black;
-}
-button:hover {
-  background-color: purple;
-  opacity: 0.5;
-  transform: scale(1.2);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.team-member {
-  position: relative;
-  display: inline-block;
-}
-
-/* -----About-Us Page Drop down buttons----- */
-.links {
-  display: none;
-  position: absolute;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  padding: 0 5px;
-  z-index: 1;
-}
-.links a {
-  padding: 8px 0;
-}
-
-.team-member:hover .links {
-  display: flex;
-}
-
-.teams {
-  width: 100%;
-  line-height: 10px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.name-button {
-  min-width: 125px;
-}
-/* .about-imgs {
-  display: flex;
-  width: 100%;
-} */
+} /*--End 1000px Section--*/
