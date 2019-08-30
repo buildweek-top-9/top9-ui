@@ -155,6 +155,14 @@ article {
 }
 p {
   padding: 30px 0;
+  font-family: papyrus, fantasy;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: copperplate;
 }
 
 h1,
@@ -247,7 +255,7 @@ button:hover {
 }
 #Welcome h1 {
   font-size: 60px;
-  color: white;
+  color: black;
 }
 /* --End Welcome Code-- */
 
@@ -261,10 +269,18 @@ button:hover {
 }
 .subsection {
   display: flex;
-  height: 400px;
+  height: 23vw;
   background-image: linear-gradient(180deg, #5ab9ea, #8860d0);
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+}
+.subsection-1 {
+  display: flex;
+  height: 23vw;
+  background-image: linear-gradient(180deg, #5ab9ea, #8860d0);
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
 }
 .mission-div {
   display: flex;
@@ -272,24 +288,27 @@ button:hover {
   flex-direction: column;
   width: 660px;
   padding: 3em 2em;
+  font-size: 12px;
 }
 .subsection-img {
-  height: 400px;
-  width: 50%;
-
+  height: 100%;
+  width: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  overflow: hidden;
 }
 
-.mission div p {
-  font-size: 12px;
+#mission div p {
+  font-size: 1vw;
 }
 /* --End Mission Code-- */
 
 /* ------About Section------  */
 #About {
-  height: 400px;
+  display: flex;
+  align-items: center;
+  height: 550px;
   width: 100%;
   background-image: linear-gradient(180deg, #5ab9ea, #8860d0);
 }
@@ -393,39 +412,6 @@ textarea {
 }
 /* --End Contact Us Code-- */
 
-/* -----Mobile Design------- */
-@media (max-width: 550px) {
-  .nav li {
-    text-align: center;
-  }
-
-  #team .subsection {
-    height: 40vw;
-  }
-  #team button {
-    transform: scale(0.8);
-  }
-  #team .subsection-img {
-    width: 30vw;
-  }
-  textarea {
-    width: 250px;
-  }
-  .Contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0;
-  }
-  .container {
-    flex-direction: column;
-  }
-  #wrapper form {
-    align-items: center;
-  }
-} /*--End Mobile Design Section--*/
-
 /* -----About-Us-Page Section----- */
 .teams {
   width: 100%;
@@ -449,7 +435,6 @@ textarea {
 }
 .name-button:hover {
   transform: none;
-  /* background-color: purple */
 }
 .links {
   display: none;
@@ -485,13 +470,14 @@ textarea {
   }
   .nav li {
     border-bottom: none;
+    font-size: 15px;
     padding: 0;
   }
   .nav ul {
     flex-direction: row;
   }
   .nav a {
-    font-size: 1rem;
+    font-size: 0.95em;
     letter-spacing: 0px;
   }
 
@@ -500,20 +486,27 @@ textarea {
     padding-left: 0;
   }
 
+  #mission div p {
+    font-size: 20px;
+  }
   .subsection {
     flex-direction: column;
     justify-content: center;
     height: 600px;
     width: 100%;
   }
+  .subsection-1 {
+    flex-direction: column;
+    height: 800px;
+  }
   .subsection-img {
     width: 100%;
     height: 100%;
   }
+
   .container {
     padding: 20px 0;
     height: 100%;
-    /* flex-direction: column; */
   }
   #wrapper form {
     display: flex;
@@ -544,19 +537,12 @@ textarea {
     margin-bottom: 5px;
     width: 100%;
   }
-  /* .Contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0;
-  } */
   .Address {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 50px 0;
+    padding: 38px 20px 20px 32px;
   }
 
   #team .subsection-img {
@@ -567,3 +553,76 @@ textarea {
     height: 32vw;
   }
 } /*--End 1000px Section--*/
+
+/* -----Mobile Design------- */
+@media (max-width: 500px) {
+  .nav li {
+    text-align: center;
+  }
+  .subsection-1 {
+    flex-direction: column;
+  }
+  h2 {
+    text-align: center;
+  }
+  #team .subsection {
+    height: 40vw;
+  }
+  #team button {
+    transform: scale(0.8);
+  }
+  #team .subsection-img {
+    width: 30vw;
+  }
+  textarea {
+    width: 250px;
+  }
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+  #wrapper form {
+    align-items: center;
+  }
+  .teams .name-button {
+    font-size: 20px;
+    padding: 15px 10px;
+  }
+  .team h2 {
+    font-size: 20px;
+  }
+  #mission subsection-img {
+    max-height: 100px;
+    widows: 100%;
+  }
+  #mission .subsection {
+    height: 800px;
+  }
+  #mission div p {
+    font-size: 3.5vw;
+  }
+  .mission-div {
+    align-content: center;
+  }
+} /*--End Mobile Design Section--*/
+
+@media (max-width: 300px) {
+  .nav-bar {
+    display: none;
+  }
+  article {
+    padding-top: 0;
+  }
+  .mission-div {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 0.9em;
+  }
+}
