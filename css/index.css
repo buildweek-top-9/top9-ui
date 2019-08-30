@@ -255,13 +255,10 @@ button:hover {
 #mission {
   width: 100%;
 }
-<<<<<<< HEAD
 .movies {
   height: 400px;
-  width: 612px;
+  width: 712px;
 }
-=======
->>>>>>> master
 .subsection {
   display: flex;
   height: 400px;
@@ -277,15 +274,8 @@ button:hover {
   padding: 3em 2em;
 }
 .subsection-img {
-<<<<<<< HEAD
   height: 400px;
   width: 500px;
-=======
-  width: 300px;
-  height: 100%;
-  border-bottom-left-radius: 15%;
-  border-top-right-radius: 10%;
->>>>>>> master
 
   background-size: cover;
   background-repeat: no-repeat;
