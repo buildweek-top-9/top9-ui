@@ -257,7 +257,7 @@ button:hover {
 }
 .movies {
   height: 400px;
-  width: 712px;
+  width: 50%;
 }
 .subsection {
   display: flex;
@@ -275,7 +275,7 @@ button:hover {
 }
 .subsection-img {
   height: 400px;
-  width: 500px;
+  width: 50%;
 
   background-size: cover;
   background-repeat: no-repeat;
